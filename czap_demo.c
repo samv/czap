@@ -10,4 +10,5 @@ int main(int n, char** argv) {
   
   CZ_INFO(logger, "Detected Firmware Version", cz_string("firmwareVersion", firmwareVersion));
   
+  CZ_INFO(logger, "Blah");
 }

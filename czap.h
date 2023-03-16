@@ -26,6 +26,7 @@
 #include "logger.h"
 
 #define CZ_INFO(logger, msg, ...) czap_log(logger, INFO, msg, ##__VA_ARGS__, czap_end)
+#define CZ_WARN(logger, msg, ...) czap_log(logger, WARN, msg, ##__VA_ARGS__, czap_end)
 
 /* get a new logger */
 czap_logger *czap_init(FILE *f);
