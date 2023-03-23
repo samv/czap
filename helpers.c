@@ -129,7 +129,8 @@ cz_writer_impl writeString(cz_writer* w, const char* val) {
     case '\b':
       w->w = writeChars(w, "\\b");
       break;
-    case ('\\', '"'):
+    case '\\':
+    case '"':
       w->w = writeChar(w, '\\');
       // fallthrough
     default:
