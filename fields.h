@@ -32,7 +32,7 @@ typedef struct {
 /* czap_field is a structure passed by value to the va_arg list */
 typedef struct {
   cz_vt* vt;
-  const char* const name; /* field name */
+  const char* name; /* field name */
   cz_fieldval val;
 } czap_field;
 
